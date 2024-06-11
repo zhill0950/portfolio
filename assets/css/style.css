@@ -189,9 +189,10 @@ main {
 
 .flex-item h3 {
   font-size: 1.6rem;
+  background-color: var(--secondary);
 }
 
-.contact address {
+.contact-address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -199,7 +200,7 @@ main {
   height: 100%;
 }
 
-.contact address a {
+.contact-address a {
   color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
@@ -214,7 +215,7 @@ main {
   display: inline-block;
 }
 
-.contact address a:hover {
+.contact-address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }
@@ -225,5 +226,15 @@ main {
 /* media queries */
 
 /* TODO: add media query for a max-width of 980px */
+@media screen and (max-width: 980px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 
 /* TODO: add media query for a max-width of 768px */
+@media screen and (max-width:768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
