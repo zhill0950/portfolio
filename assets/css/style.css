@@ -186,6 +186,47 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* playing with ::after on element/img
+
+.flex-item[data-descr] {
+  position: relative;
+}
+
+.flex-item[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  justify-content: center;
+  left: 0px;
+  top: 30px;
+  width: auto;
+  height: auto;
+  border: 1px var(--dark) solid;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+*/
+
+/*  playing with ::after
+
+span[data-descr] {
+  position: relative;
+  cursor: grab;
+}
+
+span[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: max-content;
+  height: max-content;
+  border: 1px #000 solid;
+  border-radius: 10px;
+  z-index: 1;
+}
+*/
+
 .flex-item div {
   background-color: var(--secondary);
   padding: 8px 10px;
