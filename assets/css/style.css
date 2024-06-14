@@ -176,6 +176,10 @@ main {
   font-size: 0.9rem;
 }
 
+.flex-item-text {
+  border-radius: 0 10px 10px 0;
+}
+
 /* feature first portfolio item */
 .flex-item:first-child {
     min-height: 400px;
